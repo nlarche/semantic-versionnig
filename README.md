@@ -5,9 +5,11 @@ Helper to maker easier node module [semantic versioning](http://semver.org/)
 ***
 
 this is a shortcut to run those commands : 
-    - npm version (patch|minor|major)
-    - git push origin master --tags
-    - npm publish  
+```
+    npm version (patch|minor|major)
+    git push origin master --tags
+    npm publish
+```      
 
 ***
 # Install   
