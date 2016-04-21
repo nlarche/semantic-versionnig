@@ -7,7 +7,9 @@
   },
   "keywords": [
     "Semantic",
-    "Versioning"
+    "Versioning",
+    "semver",
+    "rxjs"
   ],
   "author": "Nicolas LARCHE",
   "license": "MIT",
