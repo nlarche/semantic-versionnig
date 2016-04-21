@@ -1,0 +1,24 @@
+{
+  "name": "semantic-versioning",
+  "version": "1.0.0",
+  "description": "Semantic Versioning",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Semantic",
+    "Versioning"
+  ],
+  "author": "Nicolas LARCHE",
+  "license": "MIT",
+  "bin": {
+    "semver": "index.js"
+  },
+  "devDependencies": {
+    
+  },
+  "dependencies": {
+    "npmlog": "^2.0.3",
+    "rx": "^4.1.0"    
+  }
+}
