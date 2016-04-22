@@ -1,32 +1,48 @@
 {
-  "name": "semantic-versioning",
-  "version": "1.0.1",
-  "description": "Semantic Versioning",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "Semantic",
-    "Versioning",
-    "semver",
-    "rxjs"
-  ],
-  "author": "Nicolas LARCHE",
-  "license": "MIT",
-  "bin": {
-    "semver": "index.js"
-  },
-  "devDependencies": {},
-  "dependencies": {
-    "npmlog": "^2.0.3",
-    "rx": "^4.1.0"
-  }, 
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nlarche/semantic-versionnig.git"
-  },
-  "bugs": {
-    "url": "https://github.com/nlarche/semantic-versionnig/issues"
-  },
-  "homepage": "https://github.com/nlarche/semantic-versionnig#readme"
+    "name": "semantic-versioning",
+    "version": "1.0.1",
+    "description": "Semantic Versioning",
+    "scripts": {
+        "test" : "npm run test-mocha && npm run test-ava",
+        "test-mocha": "mocha --compilers js:babel-register src/**/**.test.js",
+        "test-ava": "ava"
+    },
+    "keywords": [
+        "Semantic",
+        "Versioning",
+        "semver",
+        "rxjs"
+    ],
+    "author": "Nicolas LARCHE",
+    "license": "MIT",
+    "bin": {
+        "semver": "index.js"
+    },
+    "devDependencies": {
+        "ava": "^0.14.0",
+        "sinon": "^1.17.3"
+    },
+    "dependencies": {
+        "npmlog": "^2.0.3",
+        "rx": "^4.1.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nlarche/semantic-versionnig.git"
+    },
+    "bugs": {
+        "url": "https://github.com/nlarche/semantic-versionnig/issues"
+    },
+    "homepage": "https://github.com/nlarche/semantic-versionnig#readme",
+    "ava": {       
+        "files": [
+            "./src/*.test.js"
+        ],        
+        "failFast": true,
+        "tap": true,
+        "require": [
+            "babel-register"
+        ],
+        "babel": "inherit"
+    }
 }
